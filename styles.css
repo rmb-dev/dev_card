@@ -1,307 +1,115 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
-  display: block;
+body, html{
+    font-size: 100%;
+    font-family: "Helvetica", sans-serif;
+}
+body,html{
+    margin:0;
+    padding: 0;
 }
 
-@font-face {
-    font-family: 'Exo 2';
-    src: url('../font/exo2/Exo2-Regular.ttf');
-    font-size: 13pt;
+nav ul{
+    list-style: none;
+    padding:0;
+    background:#444;
 }
 
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+nav ul li a{
+    color:#ddd;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    line-height: 1;
+}
+nav ul li{
+    border-bottom: 1px dotted #ddd;
 }
 
-a:focus {
-  outline: thin dotted;
+nav ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    align-self: flex-end;
+    margin-left: auto;
 }
-
-a:active, a:hover {
-  outline: 0;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-header {
-  height: 100vh;
-  padding: 1.875rem 0rem 1.875rem 0rem;
-}
-
-.header {
-  height: 100%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  /* Landscape phone to portrait tablet */
-  /* Landscape phones and down */
-}
-
-.headerTop {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.headerTop .mainNav {
-  width: 10%;
-  min-width: 300px;
-}
-
-.headerTop .mainNav li {
-  font-family: "Poppins", sans-serif;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  font-weight: normal;
-  color: white;
-  text-transform: uppercase;
-}
-
-.headerMid h2 {
-  font-size: 36px;
-  color: white;
-  letter-spacing: 0.9375rem;
-  margin: 0.9375rem;
-}
-
-.headerMid h2:before {
-  content: 'We are minimal';
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  font-weight: normal;
-  color: white;
-  padding-bottom: 0.9375rem;
-  letter-spacing: 16px;
-}
-
-.headerMid h2:after {
-  content: '';
-  content: none;
-}
-
-.headerMid .buttons {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.headerMid .arrow {
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  padding: 0.625rem 1.875rem 0.625rem 1.875rem;
-  font-size: 20px;
-  color: black;
-  transition: all 0.5s;
-}
-
-.headerMid .arrow:hover {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.headerMid .arrow.left {
-  position: absolute;
-  left: 0;
-}
-
-.headerMid .arrow.right {
-  position: absolute;
-  right: 0;
-}
-
-.header .hiddenNav {
-  display: none;
-}
-
-@media (max-width: 940px) {
-  .headerTop {
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-  .headerTop ul {
-    width: 90%;
-    min-width: 0;
-  }
-  .headerMid h2 {
-    font-size: 28px;
-    color: white;
-    letter-spacing: 1vw;
-  }
-  .headerMid h2:before {
-    padding-bottom: 0;
-    letter-spacing: 1.5vw;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    height: 80vh;
-  }
-  .header header .wrapper {
-    -webkit-justify-content: none;
-    -ms-flex-pack: none;
-    justify-content: none;
-  }
-  .header .mainNav {
-    display: none;
-  }
-  .headerMid {
-    margin: auto;
-  }
-  .headerMid h2 {
-    border-bottom: 1px solid white;
-  }
-  .header button, .header .arrow, .header .dots {
-    display: none;
-  }
-  .header .hiddenNav {
-    display: visible;
-    width: 50%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-  .header .hiddenNav li {
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-size: 0.9375rem;
-    font-weight: normal;
-    color: white;
+nav ul li a {
+    outline: none;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    margin: 0 auto;
-    padding: 0.625rem 0rem 0.625rem 0rem;
+    text-decoration: none;
+    color: #8f8f8f;
+    transition: color 0.3s ease-in;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
+
+nav div:first-child{
+    background:#222;
+}
+nav div:first-child h1{
+    line-height: 0;
+    padding: .8rem 0rem;
+    text-align: center;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-  padding: 6.25rem 0rem 6.25rem 0rem;
-  background-color: black;
+nav div:first-child h1, nav ul{
+    margin:0;
 }
 
-footer .grid {
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  margin-bottom: 4.375rem;
-}
+/*Styling for larger devices*/
 
-footer .grid figure {
-  width: 33.33333%;
-}
+@media only screen and (min-width: 30em){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background: #222;
+        align-items: center;
+    }
 
-footer .grid h3, footer .grid i {
-  color: white;
-  margin: 0.4375rem 0rem 0.4375rem 0rem;
-}
+    nav ul{
+        display: flex;
+        align-items: center;
+        background:none;
+        flex-wrap: wrap;
+    }
+    nav div:first-child h1{
+        padding: 0;
+        margin:0 1rem;
+    }
+    nav div:first-child img{
+        height: 40px;
 
-footer .grid i {
-  font-size: 30px;
-  font-size: 1.875rem;
-}
+    }
+    nav ul li{
+        border-bottom:none;
+        flex: 1 0 auto;
+        position: relative;
+    }
+    nav ul li a{
+        padding:1.2rem 1rem;
+    }
+    nav ul li a::before, nav ul li a::after{
+        content: "";
+        position: absolute;
+        bottom:0;
+        right: 0;
+        width:0%;
+        height: 2px;
+        background:red;
+        transition: .2s width ease-in-out;
+    }
 
-footer .grid p {
-  font-size: 14px;
-  font-size: 0.875rem;
-  margin: 0;
-}
+    nav ul li a::before{
+        left:0;
+    }
 
-@media (max-width: 530px) {
-  footer {
-    padding: 1.25rem 0rem 1.25rem 0rem;
-  }
-  footer h2 {
-    font-size: 19px;
-    font-size: 1.1875rem;
-  }
-  footer .grid {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-  footer .grid figure {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1.25rem 0rem 1.25rem 0rem;
-    border-bottom: 1px solid white;
-  }
-  footer .grid figure:first-child {
-    border-top: 1px solid white;
-  }
+    nav ul li a:hover::after,nav ul li a:hover::before{
+        width: 50%;
+    }
+
 }
