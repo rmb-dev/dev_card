@@ -38,3 +38,51 @@ nav.settings ul.top-nav li:nth-of-type(4) {
   align-self: flex-end;
   margin-left: auto;
 }
+
+/* menu */
+
+nav.menu {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  padding: 10px 0px;
+  background: white;
+  border-top: 1px solid #f1f1f1;
+}
+
+nav.menu ul.wrapper {
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+nav.menu ul.wrapper li {
+  list-style: none;
+  width: calc(100% / 9);
+  text-align: center;
+}
+
+nav.menu ul.wrapper li a {
+  outline: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #2b2b2b;
+  transition: color 0.3s ease-in;
+}
+
+nav.menu ul.wrapper li a:hover {
+  color: #80a05d;
+}
+
+i.fa-search {
+  font-size: 1.6rem;
+}
+
+div.hamburger {
+  display: none; }
+  div.hamburger .fa {
+    font-size: 2.4rem;
+    color: #8f8f8f; }
