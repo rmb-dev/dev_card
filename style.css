@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 body {
   background: #f5f6f7;
   line-height: 1.6;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 main {
@@ -34,8 +34,8 @@ main {
 
 .testimonial-active {
   z-index: 1;
-  /* box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2),
-    0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2); */
+  box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2),
+    0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
 }
 
 .testimonial-header,
@@ -80,6 +80,7 @@ button {
 }
 
 p {
+  font-family: 'Open Sans', sans-serif;
   text-align: justify;
   font-size: 1rem;
   font-style: italic;
