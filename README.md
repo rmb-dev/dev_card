@@ -1,12 +1,5 @@
 Font Type (From Google Fonts):  
-Poppins - https://fonts.google.com/specimen/Poppins
+Exo 2 - https://fonts.google.com/specimen/Exo+2
 
 Icons (From Font Awesome):
-Twitter - http://fontawesome.io/icon/twitter/
-Facebook - http://fontawesome.io/icon/facebook/
-Behance - http://fontawesome.io/icon/behance/
-Instagram - http://fontawesome.io/icon/instagram/
-Long arrow - http://fontawesome.io/icon/long-arrow-right/
-
-
-Add hover states for the menu bar and buttons. It should be responsive - optimized for desktop, tablet and mobile. Without any use of Bootstrap or any other external grid system.
+https://kit.fontawesome.com/66c63b4ed2.js
